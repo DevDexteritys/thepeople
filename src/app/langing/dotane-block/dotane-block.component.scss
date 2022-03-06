@@ -1,3 +1,5 @@
+@import"src/style/mixins/breakpoints";
+
 * {
   background: #171920;;
 }
@@ -86,4 +88,32 @@ input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+/*----------mobile-menu ------*/
+@include respond-to($bp_medium) {
+  .title {
+    margin-top: 50px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .text-nft {
+    width: 80% !important;
+  }
+
+  .img-heart {
+    width: 100px;
+  }
+  .form-wrap {
+    flex-direction: column;
+    .form-p {
+      margin: 0 0 20px 0!important;
+
+      .inp-form {
+        margin-right: 0;
+      }
+    }
+  }
+  .donat-form {
+    padding-bottom: 45px!important;
+  }
 }

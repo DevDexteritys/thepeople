@@ -123,6 +123,9 @@
 }
 /*----------mobile-menu ------*/
 @include respond-to($bp_medium) {
+  .logo-img {
+    width: 45px!important;
+  }
   .left-block {
     display: flex;
     justify-content: center;
