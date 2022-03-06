@@ -1,3 +1,5 @@
+@import"src/style/mixins/breakpoints";
+
 .wrapper {
   background: url("../../../assets/images/bghead2.png") no-repeat center center;
   -webkit-background-size: cover;
@@ -115,4 +117,44 @@
 .c-soon {
   color: lightgray;
   margin-top: 15px;
+}
+.logo-img {
+  width: 65px;
+}
+/*----------mobile-menu ------*/
+@include respond-to($bp_medium) {
+  .left-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .title-work {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .img-logo2 {
+    display: none;
+  }
+  .image_1 {
+    display: none;
+  }
+  .card-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .text-1 {
+    text-align: center;
+  }
+
+  .card-work {
+    margin: 50px 15px 0 0;
+  }
+  .text-card {
+    padding: 30px 28px 50px 36px!important;
+    text-align: center;
+  }
 }

@@ -1,47 +1,11 @@
 .menu {
-  background: #1d1f2752;
-  position: fixed;
-  z-index: 9999999999;
-
+  background: #1d1f27;
   .navbar {
     display: flex;
-
-    .logo-img {
-      width: 65px;
-    }
-
     .nav-menu {
       display: flex;
       margin-left: 150px;
-      .nav-link {
-        font-size: 16px;
-        font-family: "Lexend", sans-serif;
-        letter-spacing:0.2ex;
-        font-weight: 400;
-        color: white;
-        &:hover {
-          color: #7fe3e3;
-        }
-      }
 
-      .buy-button {
-        color: #ffffff;
-        font-size: 14px;
-        font-family: 'Arial', sans-serif;
-        line-height: 1.55;
-        font-weight: 600;
-        border-radius: 5px;
-        background-image: linear-gradient(90deg, rgba(149,232,105,1) 0%, rgba(81,252,144,1) 98%);
-        background-position: center center;
-        border-color: transparent;
-        border-style: solid;
-        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-        margin-left: 35px;
-        padding: 10px 30px;
-        &:hover {
-          background-image: linear-gradient(90deg, rgba(28,164,78,1) 0%, rgba(79,232,138,1) 100%);
-        }
-      }
     }
   }
 }
@@ -76,4 +40,51 @@
       color: #7fe3e3;
     }
   }
+}
+.nav-link.disabled {
+  color: #6e6e6e!important;
+}
+
+
+/* ----- botst_menu----*/
+.logo-img {
+  width: 65px;
+}
+.nav-link {
+  font-size: 16px;
+  font-family: "Lexend", sans-serif;
+  letter-spacing:0.2ex;
+  font-weight: 400;
+  color: white;
+  &:hover {
+    color: #7fe3e3;
+  }
+}
+.buy-button {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.55;
+  font-weight: 600;
+  border-radius: 5px;
+  background-image: linear-gradient(90deg, rgba(149,232,105,1) 0%, rgba(81,252,144,1) 98%);
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  margin-left: 35px;
+  padding: 10px 30px;
+  &:hover {
+    background-image: linear-gradient(90deg, rgba(28,164,78,1) 0%, rgba(79,232,138,1) 100%);
+  }
+}
+
+.navbar .navbar-toggler-icon {
+  opacity: 1;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
 }
