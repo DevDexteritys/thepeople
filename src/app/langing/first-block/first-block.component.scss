@@ -121,6 +121,10 @@
 .logo-img {
   width: 65px;
 }
+
+.left-block {
+  padding-top: 50px;
+}
 /*----------mobile-menu ------*/
 @include respond-to($bp_medium) {
   .logo-img {
@@ -160,5 +164,9 @@
   .text-card {
     padding: 30px 28px 50px 36px!important;
     text-align: center;
+  }
+
+  .left-block {
+    padding-top: 0;
   }
 }

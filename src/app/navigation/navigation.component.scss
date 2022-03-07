@@ -89,13 +89,33 @@
   outline: none;
   box-shadow: none;
 }
-
+.media {
+  display: none;
+}
 /*----------mobile-menu ------*/
 @include respond-to($bp_medium) {
   .navbar-nav {
     align-items: center;
+    padding-top: 30px;
   }
   .logo-img {
     width: 45px;
+  }
+
+  .buy-button {
+    display: none;
+  }
+  .media {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    display: block;
+
+    .tw {
+      margin-right: 10px;
+    }
+
+    .social-mg {
+      width: 30px;
+    }
   }
 }
