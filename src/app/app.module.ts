@@ -8,6 +8,7 @@ import { FirstBlockComponent } from './langing/first-block/first-block.component
 import { DotaneBlockComponent } from './langing/dotane-block/dotane-block.component';
 import { ThirdBlockComponent } from './langing/third-block/third-block.component';
 import { TeamComponent } from './langing/team/team.component';
+import { SliderComponent } from './langing/slider/slider.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { TeamComponent } from './langing/team/team.component';
     FirstBlockComponent,
     DotaneBlockComponent,
     ThirdBlockComponent,
-    TeamComponent
+    TeamComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule
